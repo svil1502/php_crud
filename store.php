@@ -16,6 +16,10 @@ $query="Insert into tasks(title, content) values (:title,:content)";
 $statement=$pdo->prepare($query);
 //выполнить запрос для меток data и получить результат true|false
 $result=$statement->execute($data);
+// отправка сообщения
+// ...
+
+
 header("Location: /");exit;
 
 ?>
